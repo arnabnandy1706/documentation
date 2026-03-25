@@ -1,3 +1,10 @@
+---
+layout: default
+title: Development
+nav_order: 9
+has_children: true
+---
+
 # Development Setup
 
 This page gets a new contributor's environment ready for local development and debugging.

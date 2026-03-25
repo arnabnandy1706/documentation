@@ -1,3 +1,10 @@
+---
+layout: default
+title: Data Flow
+parent: Architecture
+nav_order: 2
+---
+
 # Data Flow Diagrams
 
 This page traces the end-to-end data flow for the platform's most important operations.

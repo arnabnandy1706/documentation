@@ -1,3 +1,10 @@
+---
+layout: default
+title: Authentication
+parent: API Reference
+nav_order: 1
+---
+
 # Authentication
 
 The API uses **JWT (JSON Web Tokens)** for authentication. Short-lived access tokens are paired with longer-lived refresh tokens to balance security with convenience.

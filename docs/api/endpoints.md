@@ -1,3 +1,10 @@
+---
+layout: default
+title: Endpoints
+parent: API Reference
+nav_order: 2
+---
+
 # API Endpoints
 
 Complete reference for all REST API endpoints.
