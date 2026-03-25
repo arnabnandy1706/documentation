@@ -1,53 +1,55 @@
-# Documentation
+# documentation
 
-A GitHub Pages documentation site built with [Jekyll](https://jekyllrb.com/) and the [just-the-docs](https://just-the-docs.com/) theme.
+This repository contains sample Markdown documentation with Mermaid architecture and flow diagrams.
 
-## 🌐 Live Site
-
-Visit the documentation at: **https://arnabnandy1706.github.io/documentation**
-
-## 📁 Structure
+## Documentation Structure
 
 ```
-documentation/
-├── _config.yml            # Jekyll site configuration
-├── Gemfile                # Ruby gem dependencies
-├── index.md               # Home page
-├── docs/                  # Documentation pages
-│   ├── getting-started.md
-│   ├── usage.md
-│   ├── configuration.md
-│   └── contributing.md
-└── .github/
-    └── workflows/
-        └── deploy.yml     # GitHub Actions deployment workflow
+docs/
+├── index.md                      ← Documentation home & quick-start
+│
+├── architecture/
+│   ├── overview.md               ← System context & container diagrams
+│   ├── components.md             ← Per-service component descriptions
+│   └── data-flow.md              ← End-to-end data-flow diagrams
+│
+├── api/
+│   ├── overview.md               ← API conventions & response shapes
+│   ├── authentication.md         ← JWT auth flow & RBAC
+│   └── endpoints.md              ← Full endpoint reference
+│
+├── guides/
+│   ├── getting-started.md        ← Run the platform locally in minutes
+│   ├── installation.md           ← Docker & Kubernetes production deploy
+│   └── configuration.md          ← Environment variable reference
+│
+└── development/
+    ├── setup.md                  ← Dev environment setup & scripts
+    ├── contributing.md           ← PR workflow & branching strategy
+    └── testing.md                ← Testing pyramid, examples & coverage
 ```
 
-## 🚀 Deployment
+## Mermaid Diagrams Included
 
-The site is automatically built and deployed to GitHub Pages whenever changes are pushed to the `main` branch via the GitHub Actions workflow in `.github/workflows/deploy.yml`.
+Every page contains at least one [Mermaid](https://mermaid.js.org) diagram — rendered natively on GitHub. Types used across the docs:
 
-To enable GitHub Pages:
-1. Go to **Settings → Pages** in this repository.
-2. Under **Source**, select **GitHub Actions**.
+| Diagram type | Example location |
+|---|---|
+| `graph` / `flowchart` | [Architecture Overview](./docs/architecture/overview.md) |
+| `sequenceDiagram` | [Authentication](./docs/api/authentication.md) |
+| `classDiagram` | [Component Descriptions](./docs/architecture/components.md) |
+| `stateDiagram-v2` | [API Endpoints](./docs/api/endpoints.md) |
+| `gitGraph` | [Contributing Guide](./docs/development/contributing.md) |
+| `C4Context` | [Architecture Overview](./docs/architecture/overview.md) |
 
-## 🛠 Local Development
+## Quick Start
 
-1. Install [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/).
-2. Install dependencies:
-   ```bash
-   bundle install
-   ```
-3. Serve the site locally:
-   ```bash
-   bundle exec jekyll serve
-   ```
-4. Open `http://localhost:4000` in your browser.
+```bash
+git clone https://github.com/example/project.git
+cd project
+npm install
+docker compose up -d
+npm run dev
+```
 
-## 📝 Contributing
-
-See [Contributing](docs/contributing.md) for guidelines on how to contribute.
-
-## 📄 License
-
-MIT License
+See [Getting Started](./docs/guides/getting-started.md) for the full walkthrough.
