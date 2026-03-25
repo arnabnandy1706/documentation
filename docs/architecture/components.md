@@ -1,3 +1,10 @@
+---
+layout: default
+title: Components
+parent: Architecture
+nav_order: 1
+---
+
 # Component Descriptions
 
 This page provides a detailed breakdown of every service in the platform.

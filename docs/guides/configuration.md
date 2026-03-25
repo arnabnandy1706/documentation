@@ -1,3 +1,10 @@
+---
+layout: default
+title: Configuration Reference
+parent: Guides
+nav_order: 2
+---
+
 # Configuration Reference
 
 All services are configured via **environment variables**. This page lists every variable, its purpose, and its default value.

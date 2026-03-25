@@ -1,3 +1,10 @@
+---
+layout: default
+title: API Reference
+nav_order: 7
+has_children: true
+---
+
 # API Overview
 
 The platform exposes a RESTful HTTP API. All requests and responses use **JSON** unless otherwise noted.

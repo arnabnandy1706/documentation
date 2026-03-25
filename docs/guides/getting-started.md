@@ -1,3 +1,10 @@
+---
+layout: default
+title: Guides
+nav_order: 8
+has_children: true
+---
+
 # Getting Started
 
 This guide walks you through running the platform locally for the first time.

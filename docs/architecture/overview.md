@@ -1,3 +1,10 @@
+---
+layout: default
+title: Architecture
+nav_order: 6
+has_children: true
+---
+
 # Architecture Overview
 
 This document describes the high-level architecture of the system, the major components, and how they interact.

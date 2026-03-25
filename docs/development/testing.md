@@ -1,3 +1,10 @@
+---
+layout: default
+title: Testing
+parent: Development
+nav_order: 2
+---
+
 # Testing Guide
 
 This page describes the testing strategy, tooling, and conventions used across the project.

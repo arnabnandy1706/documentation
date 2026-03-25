@@ -1,3 +1,10 @@
+---
+layout: default
+title: Contributing Guide
+parent: Development
+nav_order: 1
+---
+
 # Contributing Guide
 
 Thank you for contributing! Please read this guide before opening a pull request.
